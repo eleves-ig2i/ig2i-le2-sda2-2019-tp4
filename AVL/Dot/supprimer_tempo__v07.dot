@@ -1,0 +1,19 @@
+digraph supprimer_tempo_ {
+	node [
+		fontname  = "Arial bold" 
+		fontsize  = "14"
+		fontcolor = "red"
+		style     = "rounded, filled"
+		shape     = "record"
+		fillcolor = "grey90"
+		color     = "blue"
+		width     = "2"
+	]
+
+	edge [
+		color     = "blue"
+	]
+
+15 [label = "{<c> 15 | { <g> | <d>}}"];
+15 [label = "{<c> 15 | { <g> NULL | <d> NULL}}"];
+}

@@ -1,0 +1,32 @@
+digraph supprimer_origin_ {
+	node [
+		fontname  = "Arial bold" 
+		fontsize  = "14"
+		fontcolor = "red"
+		style     = "rounded, filled"
+		shape     = "record"
+		fillcolor = "grey90"
+		color     = "blue"
+		width     = "2"
+	]
+
+	edge [
+		color     = "blue"
+	]
+
+4 [label = "{<c> 4 | { <g> | <d>}}"];
+4:g -> 2;
+2 [label = "{<c> 2 | { <g> | <d>}}"];
+2:g -> 1;
+1 [label = "{<c> 1 | { <g> | <d>}}"];
+1 [label = "{<c> 1 | { <g> NULL | <d> NULL}}"];
+2:d -> 3;
+3 [label = "{<c> 3 | { <g> | <d>}}"];
+3 [label = "{<c> 3 | { <g> NULL | <d> NULL}}"];
+4:d -> 6;
+6 [label = "{<c> 6 | { <g> | <d>}}"];
+6 [label = "{<c> 6 | { <g> NULL | <d>}}"];
+6:d -> 10;
+10 [label = "{<c> 10 | { <g> | <d>}}"];
+10 [label = "{<c> 10 | { <g> NULL | <d> NULL}}"];
+}

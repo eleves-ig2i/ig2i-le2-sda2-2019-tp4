@@ -1,0 +1,32 @@
+digraph test_inserer_v2_ {
+	node [
+		fontname  = "Arial bold" 
+		fontsize  = "14"
+		fontcolor = "red"
+		style     = "rounded, filled"
+		shape     = "record"
+		fillcolor = "grey90"
+		color     = "blue"
+		width     = "2"
+	]
+
+	edge [
+		color     = "blue"
+	]
+
+30 [label = "{<c> 30 | { <g> | <d>}}"];
+30:g -> 20;
+20 [label = "{<c> 20 | { <g> | <d>}}"];
+20:g -> 15;
+15 [label = "{<c> 15 | { <g> | <d>}}"];
+15 [label = "{<c> 15 | { <g> NULL | <d> NULL}}"];
+20:d -> 25;
+25 [label = "{<c> 25 | { <g> | <d>}}"];
+25 [label = "{<c> 25 | { <g> NULL | <d> NULL}}"];
+30:d -> 40;
+40 [label = "{<c> 40 | { <g> | <d>}}"];
+40 [label = "{<c> 40 | { <g> NULL | <d>}}"];
+40:d -> 45;
+45 [label = "{<c> 45 | { <g> | <d>}}"];
+45 [label = "{<c> 45 | { <g> NULL | <d> NULL}}"];
+}

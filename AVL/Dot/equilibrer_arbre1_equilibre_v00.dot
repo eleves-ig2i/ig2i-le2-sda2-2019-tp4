@@ -1,0 +1,24 @@
+digraph equilibrer_arbre1_equilibre {
+	node [
+		fontname  = "Arial bold" 
+		fontsize  = "14"
+		fontcolor = "red"
+		style     = "rounded, filled"
+		shape     = "record"
+		fillcolor = "grey90"
+		color     = "blue"
+		width     = "2"
+	]
+
+	edge [
+		color     = "blue"
+	]
+
+2 [label = "{<c> 2 | { <g> | <d>}}"];
+2:g -> 1;
+1 [label = "{<c> 1 | { <g> | <d>}}"];
+1 [label = "{<c> 1 | { <g> NULL | <d> NULL}}"];
+2:d -> 3;
+3 [label = "{<c> 3 | { <g> | <d>}}"];
+3 [label = "{<c> 3 | { <g> NULL | <d> NULL}}"];
+}
